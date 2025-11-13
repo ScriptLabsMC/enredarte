@@ -26,14 +26,8 @@ export default function Footer() {
                         Creaciones únicas de bisutería, maquillaje y pulseras hechas a mano con amor y dedicación.
                     </p>
                     <div className={styles.socialLinks}>
-                        <a href="#" className={styles.socialLink} aria-label="Instagram">
+                        <a href="https://instagram.com/enred.arte_puebla" className={styles.socialLink} aria-label="Instagram">
                             <FontAwesomeIcon icon={faInstagram} />
-                        </a>
-                        <a href="#" className={styles.socialLink} aria-label="Facebook">
-                            <FontAwesomeIcon icon={faFacebook} />
-                        </a>
-                        <a href="#" className={styles.socialLink} aria-label="WhatsApp">
-                            <FontAwesomeIcon icon={faWhatsapp} />
                         </a>
                     </div>
                 </div>
@@ -43,10 +37,9 @@ export default function Footer() {
                     <h3 className={styles.footerTitle}>Enlaces Rápidos</h3>
                     <div className={styles.footerLinks}>
                         <Link href="/" className={styles.footerLink}>Inicio</Link>
-                        <Link href="/bisuteria" className={styles.footerLink}>Bisutería</Link>
                         <Link href="/maquillaje" className={styles.footerLink}>Maquillaje</Link>
                         <Link href="/pulseras" className={styles.footerLink}>Pulseras</Link>
-                        <Link href="/sobre-nosotros" className={styles.footerLink}>Sobre Nosotros</Link>
+                        <Link href="/about" className={styles.footerLink}>Sobre Nosotros</Link>
                     </div>
                 </div>
 
@@ -54,17 +47,17 @@ export default function Footer() {
                 <div className={styles.footerSection}>
                     <h3 className={styles.footerTitle}>Contacto</h3>
                     <div className={styles.contactInfo}>
-                        <div className={styles.contactItem}>
+                        {/* <div className={styles.contactItem}>
                             <FontAwesomeIcon icon={faPhone} className={styles.contactIcon} />
                             <span>+34 123 456 789</span>
                         </div>
                         <div className={styles.contactItem}>
                             <FontAwesomeIcon icon={faEnvelope} className={styles.contactIcon} />
                             <span>info@enredarte.com</span>
-                        </div>
+                        </div> */}
                         <div className={styles.contactItem}>
                             <FontAwesomeIcon icon={faMapMarkerAlt} className={styles.contactIcon} />
-                            <span>Tu Ciudad, España</span>
+                            <span>Heroica Puebla de Zaragoza , Puebla, México</span>
                         </div>
                     </div>
                 </div>

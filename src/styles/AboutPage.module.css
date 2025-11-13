@@ -1,0 +1,93 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 4rem 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+  background: var(--color-bg-page);
+  color: var(--color-text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 2.5rem;
+  background: var(--gradient-brand-accent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  color: var(--color-text-secondary);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.story,
+.values,
+.closing {
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px var(--color-shadow);
+}
+
+.story h2,
+.values h2,
+.closing h2 {
+  font-size: 1.6rem;
+  background: var(--gradient-brand-horizontal);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.story p,
+.closing p {
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+}
+
+.values ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.values li {
+  margin: 0.5rem 0;
+  font-size: 1.05rem;
+  color: var(--color-text-secondary);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .main {
+    padding: 2rem 1rem;
+  }
+
+  .intro h1 {
+    font-size: 2rem;
+  }
+
+  .story,
+  .values,
+  .closing {
+    padding: 1.5rem;
+  }
+}

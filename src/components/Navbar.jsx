@@ -11,7 +11,8 @@ import {
     faBars,
     faTimes,
     faMoon,
-    faSun
+    faSun,
+    faStar
 } from '@fortawesome/free-solid-svg-icons'
 import styles from '../styles/components/navbar.module.css'
 
@@ -85,9 +86,6 @@ export default function Navbar() {
                     <Link href="/" className={styles.navLink} onClick={() => setIsMenuOpen(false)}>
                         Inicio
                     </Link>
-                    <Link href="/bisuteria" className={styles.navLink} onClick={() => setIsMenuOpen(false)}>
-                        Bisutería
-                    </Link>
                     <Link href="/maquillaje" className={styles.navLink} onClick={() => setIsMenuOpen(false)}>
                         Maquillaje
                     </Link>
@@ -108,7 +106,7 @@ export default function Navbar() {
                         <FontAwesomeIcon icon={faUser} />
                     </button>
                     <button className={`${styles.iconBtn} ${styles.cartBtn}`} aria-label="Carrito">
-                        <FontAwesomeIcon icon={faShoppingCart} />
+                        <FontAwesomeIcon icon={faStar} />
                         <span className={styles.cartCount}>0</span>
                     </button>
                     <button 
